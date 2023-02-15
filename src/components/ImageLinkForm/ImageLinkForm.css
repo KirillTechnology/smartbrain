@@ -1,0 +1,15 @@
+.input1 {
+    display: flex;
+    justify-content: center;
+}
+
+input.image-search {
+    width: 77%;
+}
+
+button.btn-1 {
+    color: green;
+    border: 2px solid green;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 1);
+}

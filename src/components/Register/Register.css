@@ -1,0 +1,87 @@
+div.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: min(300px,90%);
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    color: white;
+    text-shadow: 0 0 10px black;
+    box-sizing: border-box;
+}
+
+div.register div, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+div.register label {
+    align-self: flex-start;
+    font-size: 14px;
+    /* font-weight: bold; */
+}
+
+div.register h1 {
+    font-style: italic;
+    margin-top: 0;
+    color: coral;
+    text-shadow: 0 0 10px black;
+}
+
+div.register a {
+    color: white;
+    text-shadow: 0 0 20px black;
+    font-size: 14px;
+}
+
+div.register p {
+    color: white;
+    text-decoration: none;
+}
+
+div.register p:hover {
+    color: coral;
+}
+
+input {
+    height: 30px;
+    border: 1px solid white;
+    box-shadow: 0 0 2px black inset;
+    background: rgba(245, 245, 245, 1);
+    font-size: 18px;
+    color: black;
+}
+
+input[type=submit] {
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-weight: bold;
+    box-shadow: 0 0 4px black;
+    text-shadow: 0 0 10px black;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0 0 10px white;
+}
+
+input[type=submit]:active {
+    opacity: 75%;
+}
+
+.error {
+    text-align: center;
+    text-shadow: 0 0 10px black;
+    color: coral;
+}

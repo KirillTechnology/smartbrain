@@ -1,0 +1,19 @@
+.tilt-container {
+    display: flex;
+    justify-content: center;
+}
+
+div.tilt {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to bottom, coral, 50%, #3E6D9C);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+}
+
+div.tilt h1 {
+    color: white;
+}

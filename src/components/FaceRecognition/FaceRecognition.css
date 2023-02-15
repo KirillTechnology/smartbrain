@@ -1,0 +1,14 @@
+div.output {
+    position: relative;
+}
+
+div.output img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+div.bounding-box {
+    position: absolute;
+    cursor: pointer; 
+    box-shadow: 0 0 0 4px coral inset;
+}
