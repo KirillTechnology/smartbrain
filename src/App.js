@@ -190,11 +190,13 @@ class App extends React.Component {
             {/* Add a note that API can be down sometimes */}
           </div>
           :
-          (route === 'signin'
-            ? <SignIn onRouteChange={this.onRouteChange} loadUser={this.loadUser} /> // Add Sign-In h1 color animation
-            : <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser} />
+          (route === 'register'
+            ? <Register onRouteChange={this.onRouteChange} loadUser={this.loadUser} />
+            : <SignIn onRouteChange={this.onRouteChange} loadUser={this.loadUser} /> // Add Sign-In h1 color animation 
           )
         }
+
+      <Footer />
 
       </div>
     );

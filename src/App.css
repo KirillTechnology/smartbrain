@@ -2,8 +2,10 @@ div.App {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap:20px;
-  color: white
+  color: white;
+  min-height: 100vh
 }
 
 div.main-space {
