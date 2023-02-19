@@ -3,6 +3,7 @@ import React from 'react';
 
 import ParticlesBg from 'particles-bg';
 import Navigation from './components/Navigation/Navigation';
+import Footer from './components/Footer/Footer';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
 import Logo from './components/Logo/Logo';
