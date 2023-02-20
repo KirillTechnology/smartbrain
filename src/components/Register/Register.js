@@ -50,7 +50,7 @@ class Register extends React.Component {
 
     onKeyDownCustom = (event) => {
         if (event.key === 'Enter'){
-            this.onSubmitSignIn()
+            this.onSubmitRegister()
         }
         
     }
@@ -96,6 +96,7 @@ class Register extends React.Component {
                                 name='password' 
                                 size={24} 
                                 onChange={this.onPasswordChange}
+                                onKeyDown={this.onKeyDownCustom}
                                 />
                         </div>
 
