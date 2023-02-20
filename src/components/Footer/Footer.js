@@ -14,7 +14,7 @@ const Footer = () => {
                 </div>
 
                 <div className="logo">
-                    <h1 className="footer">Kirill S</h1>
+                    <h1 className="footer">Kirill {'/ 2023'}</h1>
                 </div>
             </div>
             

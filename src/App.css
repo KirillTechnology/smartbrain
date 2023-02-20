@@ -5,7 +5,8 @@ div.App {
   justify-content: space-between;
   gap:20px;
   color: white;
-  min-height: 100vh
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 div.main-space {
