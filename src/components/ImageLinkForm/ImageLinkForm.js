@@ -9,7 +9,8 @@ const ImageLinkForm = ({onInputChange, onButtonSubmit}) => {
             {/* <p>* Don't resize window after face is detected</p> */}
             <p>* Image should be {'<'}20MB</p>
             <p>* The app uses Clarifai API and sometime it can be down</p>
-            <p>* The app uses free database, which deletes logins every 90 days</p>
+            <p>* Use Google Chrome for better experience</p>
+            {/* <p>* The app uses free database, which deletes logins every 90 days</p> */}
             
             <div className="input1">
                 <input type='text' className="image-search" placeholder="Type image url" onChange={onInputChange}></input>
