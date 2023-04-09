@@ -7,7 +7,8 @@ class SignIn extends React.Component {
         this.state = {
             email: '',
             password: '',
-            error: ''
+            error: '',
+            loading: ''
         }
     }
 
@@ -20,6 +21,8 @@ class SignIn extends React.Component {
     }
 
     onSubmitSignIn = () => {
+        this.setState({loading: true})
+
         fetch('https://smartbrain-api-m35g.onrender.com/signin', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
@@ -35,7 +38,8 @@ class SignIn extends React.Component {
                 this.setState({error: ''});
                 this.props.onRouteChange('home')
             } else {
-                this.setState({error: 'login error'})
+                this.setState({error: 'login error'});
+                this.setState({loading: ''}); 
             }
         })
         
@@ -91,6 +95,7 @@ class SignIn extends React.Component {
                             <p onClick={() => onRouteChange('register')} style={{cursor:'pointer'}}>Register</p> 
                         </div>
 
+                        {this.state.loading ? <div style={{color:'coral', margin: '20px 0 0 0'}}>Loading...</div> : null}
                         {this.state.error ? <div style={{margin: '20px 0 0 0'}}>{':: ' + this.state.error + ' ::'}</div> : null}
 
                     {/* </fieldset> */}
