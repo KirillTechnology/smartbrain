@@ -38,7 +38,7 @@ class SignIn extends React.Component {
                 this.setState({error: ''});
                 this.props.onRouteChange('home')
             } else {
-                this.setState({error: 'Login error (Check your info)'});
+                this.setState({error: 'Login error (Check input)'});
                 this.setState({loading: ''}); 
             }
         })
