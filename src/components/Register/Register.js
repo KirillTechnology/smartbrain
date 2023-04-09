@@ -8,7 +8,8 @@ class Register extends React.Component {
             name: '',
             email: '',
             password: '',
-            error: ''
+            error: '',
+            loading: ''
         }
     }
 
@@ -24,7 +25,9 @@ class Register extends React.Component {
         this.setState({password: event.target.value})
     }
 
-    onSubmitRegister = () => {        
+    onSubmitRegister = () => {   
+        this.setState({loading: true});
+
         fetch('https://smartbrain-api-m35g.onrender.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
@@ -41,7 +44,8 @@ class Register extends React.Component {
                 this.props.loadUser(user);
                 this.props.onRouteChange('home');
             } else {
-                this.setState({error: 'register error'})
+                this.setState({error: 'register error'});
+                this.setState({loading: ''}); 
             }
         })
 
@@ -111,6 +115,7 @@ class Register extends React.Component {
                             />
                         </div>
 
+                        {this.state.loading ? <div style={{color:'coral', margin: '20px 0 0 0'}}>Loading...</div> : null}
                         {this.state.error ? <div style={{margin: '20px 0 0 0'}}>{':: ' + this.state.error + ' ::'}</div> : null}
                                         
 

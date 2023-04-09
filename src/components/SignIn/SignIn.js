@@ -21,7 +21,7 @@ class SignIn extends React.Component {
     }
 
     onSubmitSignIn = () => {
-        this.setState({loading: true})
+        this.setState({loading: true});
 
         fetch('https://smartbrain-api-m35g.onrender.com/signin', {
             method: 'post',

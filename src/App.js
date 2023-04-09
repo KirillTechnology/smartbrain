@@ -3,6 +3,7 @@ import React from 'react';
 
 import ParticlesBg from 'particles-bg';
 import Navigation from './components/Navigation/Navigation';
+import Note from './components/Note/Note';
 import Footer from './components/Footer/Footer';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
@@ -177,6 +178,7 @@ class App extends React.Component {
 
         <ParticlesBg type="cobweb" color="#ffffff" num={100} bg={true} />
         <Navigation onRouteChange={this.onRouteChange} isSignedIn={isSignedIn} />
+        <Note />
 
         {route === 'home'
           ?
